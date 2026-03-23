@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 for i in ramnge(100):
     if i == 99:
         print("{}".format(i))
