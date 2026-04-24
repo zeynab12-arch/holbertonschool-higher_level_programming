@@ -1,4 +1,4 @@
-#!/usr/ibn/python3
+#!/usr/bin/python3
 '''This module returns json to objcet'''
 
 import json
