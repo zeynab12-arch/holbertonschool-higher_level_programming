@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""Add command-line arguments to a list and save to JSON."""
+"""Add command-line arguments to a list and save to JSON."""
 
 import sys
 from os import path
