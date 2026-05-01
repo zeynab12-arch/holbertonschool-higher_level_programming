@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-'''This module is child class of Rectangle.'''
-Rectangle = __import__('9-rectangle').Rectangle
+'''This module is a class BaseGeometry.'''
 
 
-class Square(Rectangle):
-    '''Is child of BaseGeometry.'''
-
-    def __init__(self, size):
-        super().integer_validator("size", size)
-
-        self.__size = size
+class BaseGeometry:
+    '''class BaseGeometry.'''
 
     def area(self):
-        return self.__size ** 2
+        raise Exception("area() is not implemented")
 
-    def __str__(self):
-        return f'[Square] {self.__size}/{self.__size}'
+    def integer_validator(self, name, value):
+        if type(value) is not int:
+            raise TypeError(f"{name} must be an integer")
+        if value <= 0:
+            raise ValueError(f"{name} must be greater than 0")
