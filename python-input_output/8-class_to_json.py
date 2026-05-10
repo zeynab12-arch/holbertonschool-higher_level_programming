@@ -1,5 +1,7 @@
- #!/usr/bin/python3
-'''Return the dictionary description'''
+#!/usr/bin/python3
+'''This module  returns the dictionary description.'''
+
+
 def class_to_json(obj):
-	'''Return the dictionary description'''
-	return obj.___dict___
+    '''returns the dictionary description.'''
+    return obj.__dict__
