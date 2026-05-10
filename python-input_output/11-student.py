@@ -24,3 +24,4 @@ class Student:
     def reload_from_json(self, json):
         for k in json.keys():
             setattr(self, k, json[k])
+            
