@@ -1,6 +1,7 @@
 #!/usr/bin/node
+
 function add (a, b) {
-    return a + b;
+    return a + b
   }
   
-  module.exports = { add };
+  console.log(add(Number(process.argv[2]), Number(process.argv[3])))
